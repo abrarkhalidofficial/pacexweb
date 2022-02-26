@@ -11,16 +11,6 @@ export default function SupplyChainSection() {
         alt="SupplySectionPic"
         className="supply__chain__section__img"
       />
-
-      <img
-        src={supplyHeadingBg}
-        alt="supplyHeadingBg"
-        className="supply__chain__section__heading__img"
-      />
-      <div className="supply__chain__section__heading">
-        MEET CLOUD
-        <span>SUPPLY CHAIN</span>
-      </div>
       <div className="supply__chain__section__overlay">
         <div className="supply__chain__section__content">
           <img
@@ -29,6 +19,15 @@ export default function SupplyChainSection() {
             className="supply__chain__section__content__img"
           />
           <div className="supply__chain__section__content__right">
+            <img
+              src={supplyHeadingBg}
+              alt="supplyHeadingBg"
+              className="supply__chain__section__heading__img"
+            />
+            <div className="supply__chain__section__heading">
+              MEET CLOUD
+              <span>SUPPLY CHAIN</span>
+            </div>
             <div className="supply__chain__section__content__right__para">
               Cloud Supply Chain is the medium that converges the digital and
               physical tools to scale and optimize supply chain with the help of

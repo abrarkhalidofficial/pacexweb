@@ -8,6 +8,7 @@ import FulfullingPartner from "../components/FulfullingPartner";
 import GrowUp from "../components/GrowUp";
 import Jumbotron from "../components/Jumbotron";
 import SimplifyOperation from "../components/SimplifyOperation";
+import SmarterOperation from "../components/SmarterOperation";
 import SoftwareCapabilities from "../components/SoftwareCapabilities";
 import SupplyChainSection from "../components/SupplyChainSection";
 import WhatWeEnable from "../components/WhatWeEnable";
@@ -20,6 +21,7 @@ export default function Home() {
       <FedUpLogistics />
       <WhatWeEnable />
       <Fulfillment />
+      <SmarterOperation />
       <FulfullingPartner />
       <SoftwareCapabilities />
       <DigitalCoverage />
