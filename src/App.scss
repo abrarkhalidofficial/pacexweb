@@ -539,6 +539,57 @@ input:-webkit-autofill:active {
   color: #ffffff;
   margin-bottom: 1em;
 }
+.digital__coverage__section {
+  width: 100%;
+  height: fit-content;
+  min-height: 70vh;
+}
+.digital__coverage__section__content {
+  width: 100%;
+  max-width: 1440px;
+  height: fit-content;
+  padding: 2em;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.digital__coverage__section__content__img {
+  width: 650px;
+}
+.digital__coverage__section__content__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.digital__coverage__section__content__left__heading {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-weight: 600;
+}
+.digital__coverage__section__content__left__card {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.digital__coverage__section__content__left__card__no {
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+.digital__coverage__section__content__left__card__heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f3974a;
+  margin: 0.2em 0em;
+}
+.digital__coverage__section__content__left__card__para {
+  font-size: 16px;
+  color: #000000;
+}
 @media (max-width: 1250px) {
   .contact__container {
     height: fit-content;
@@ -560,8 +611,21 @@ input:-webkit-autofill:active {
   .faq__section__content__left {
     width: 40%;
   }
+  .digital__coverage__section__content__img {
+    width: 450px;
+  }
 }
 @media (max-width: 1000px) {
+  .digital__coverage__section__content {
+    flex-direction: column;
+  }
+  .digital__coverage__section__content__left {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .digital__coverage__section__content__left__card {
+    width: 100%;
+  }
   .supply__chain__section__content {
     flex-direction: column;
   }
@@ -659,5 +723,9 @@ input:-webkit-autofill:active {
   }
   .contact__container__content {
     padding: 1em;
+  }
+  .digital__coverage__section__content__img {
+    width: 300px;
+    margin: 2em 0em;
   }
 }
