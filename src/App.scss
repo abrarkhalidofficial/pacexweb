@@ -185,7 +185,6 @@ input:-webkit-autofill:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0em;
 }
 
 .contact__container__content {
@@ -199,7 +198,7 @@ input:-webkit-autofill:active {
 }
 .contact__container__content iframe {
   width: 50%;
-  height: 90%;
+  height: 100%;
   border: none;
 }
 .contact__container__form {
@@ -407,6 +406,77 @@ input:-webkit-autofill:active {
   color: #000000;
   margin: 0.5em 0em;
 }
+.grow__up__section {
+  width: 100%;
+  height: fit-content;
+  min-height: 60vh;
+  position: relative;
+}
+.grow__up__section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+.grow__up__section__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grow__up__section__overlay__content {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grow__up__section__overlay__content__heading {
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.grow__up__section__overlay__content__heading span {
+  position: relative;
+}
+.grow__up__section__overlay__content__heading span::before {
+  position: absolute;
+  bottom: -4px;
+  right: 70px;
+  content: "";
+  width: 50%;
+  height: 6px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f87756, #d25533);
+  z-index: -1;
+}
+.grow__up__section__overlay__content__heading__center {
+  position: relative;
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.grow__up__section__overlay__content__heading__center::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 42%;
+  height: 40px;
+  background: linear-gradient(90deg, #f87756, #d25533);
+  z-index: -1;
+}
 @media (max-width: 1250px) {
   .contact__container {
     height: fit-content;
@@ -455,6 +525,14 @@ input:-webkit-autofill:active {
   }
 }
 @media (max-width: 600px) {
+  .grow__up__section__overlay__content__heading,
+  .grow__up__section__overlay__content__heading__center {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .grow__up__section__overlay__content__heading__center::after {
+    height: 32px;
+  }
   .faq__section__content__img {
     width: 250px;
     margin: 0px auto;
