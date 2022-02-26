@@ -2,6 +2,7 @@ import React from "react";
 import Contact from "../components/Contact";
 import DigitalCoverage from "../components/DigitalCoverage";
 import FAQ from "../components/FAQ";
+import FulfullingPartner from "../components/FulfullingPartner";
 import GrowUp from "../components/GrowUp";
 import Jumbotron from "../components/Jumbotron";
 import SoftwareCapabilities from "../components/SoftwareCapabilities";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Jumbotron />
+      <FulfullingPartner />
       <SoftwareCapabilities />
       <DigitalCoverage />
       <SupplyChainSection />
