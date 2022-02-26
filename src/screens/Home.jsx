@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import DigitalCoverage from "../components/DigitalCoverage";
 import FAQ from "../components/FAQ";
 import FedUpLogistics from "../components/FedUpLogistics";
+import Fulfillment from "../components/Fulfillment";
 import FulfullingPartner from "../components/FulfullingPartner";
 import GrowUp from "../components/GrowUp";
 import Jumbotron from "../components/Jumbotron";
@@ -18,6 +19,7 @@ export default function Home() {
       <SimplifyOperation />
       <FedUpLogistics />
       <WhatWeEnable />
+      <Fulfillment />
       <FulfullingPartner />
       <SoftwareCapabilities />
       <DigitalCoverage />

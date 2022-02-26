@@ -753,7 +753,7 @@ input:-webkit-autofill:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em 1.5em;
+  padding: 0em 1.5em;
 }
 .what__we__enable__header {
   width: fit-content;
@@ -770,11 +770,13 @@ input:-webkit-autofill:active {
   color: #2761af;
   font-size: 14px;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 .what__we__enable__header__heading {
   color: #242424;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 .what__we__enable__content {
   display: flex;
@@ -918,6 +920,57 @@ input:-webkit-autofill:active {
   .fed__up__logistics__section__overlay__content__img {
     width: 600px;
   }
+  .fulfillment {
+    width: 100%;
+    position: relative;
+  }
+  .fulfillment__img {
+    width: 100%;
+    height: 770px;
+  }
+  .fulfillment__wrapper {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .fulfillment__wrapper__content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0em auto;
+    padding: 5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fulfillment__wrapper__content__header {
+    width: fit-content;
+    padding: 1.2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #12121a;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+  }
+  .fulfillment__wrapper__content__header__sub__heading {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 0.2em;
+    text-align: center;
+  }
+  .fulfillment__wrapper__content__header__heading {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .fulfillment__wrapper__content__img {
+    width: 80%;
+    max-height: 450px;
+  }
 }
 @media (max-width: 1250px) {
   .contact__container {
@@ -1019,8 +1072,25 @@ input:-webkit-autofill:active {
   .faq__section__content__left {
     width: 100%;
   }
+  .fulfillment__img {
+    height: 700px;
+  }
+}
+
+@media (max-width: 900px) {
+  .fulfillment__img {
+    height: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .fulfillment__img {
+    height: 600px;
+  }
 }
 @media (max-width: 700px) {
+  .fulfillment__img {
+    height: 550px;
+  }
   .what__we__enable__content {
     flex-direction: column;
   }
@@ -1054,6 +1124,9 @@ input:-webkit-autofill:active {
 @media (max-width: 600px) {
   .fed__up__logistics__section__overlay__content__left__heading {
     font-size: 24px;
+  }
+  .fulfillment__img {
+    height: 500px;
   }
   .fulfulling__partner__section {
     height: 80vh;
@@ -1127,5 +1200,8 @@ input:-webkit-autofill:active {
   .digital__coverage__section__content__img {
     width: 300px;
     margin: 2em 0em;
+  }
+  .fulfillment__wrapper__content__img {
+    width: 100%;
   }
 }
