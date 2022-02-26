@@ -2,9 +2,11 @@ import React from "react";
 import Contact from "../components/Contact";
 import DigitalCoverage from "../components/DigitalCoverage";
 import FAQ from "../components/FAQ";
+import FedUpLogistics from "../components/FedUpLogistics";
 import FulfullingPartner from "../components/FulfullingPartner";
 import GrowUp from "../components/GrowUp";
 import Jumbotron from "../components/Jumbotron";
+import SimplifyOperation from "../components/SimplifyOperation";
 import SoftwareCapabilities from "../components/SoftwareCapabilities";
 import SupplyChainSection from "../components/SupplyChainSection";
 import WhatWeEnable from "../components/WhatWeEnable";
@@ -13,6 +15,8 @@ export default function Home() {
   return (
     <>
       <Jumbotron />
+      <SimplifyOperation />
+      <FedUpLogistics />
       <WhatWeEnable />
       <FulfullingPartner />
       <SoftwareCapabilities />
